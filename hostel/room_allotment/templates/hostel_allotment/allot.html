@@ -1,4 +1,8 @@
 {% extends "hostel_allotment/base.html" %}
 {% block content %}
+<div><b>Hostels Available </b></div>
 
+{% for i in hostel %}    
+         <div><b>Hostel Name :  </b>{{ i.1 }}</div>
+{% endfor %}         
 {% endblock content %}
