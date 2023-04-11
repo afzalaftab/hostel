@@ -94,3 +94,21 @@ a.article-title:hover {
   align-items: center;
 
 }
+
+.book-room{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+}
+
+select{
+  border-radius: 3px;
+  padding: 4px;
+  margin: 4px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  margin: 20px auto 20px 2px;
+}
