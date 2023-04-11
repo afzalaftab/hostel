@@ -1,0 +1,13 @@
+{% extends "hostel_allotment/base.html" %}
+{% block content %}
+<div><b>Hostels Available </b></div>
+<div class="book-room">
+    <select class="form-select" aria-label="Default select example">
+        {% for i in hostel %}
+        <option value=`{i.0}`>{{i.1}}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-primary mb-3">Get a Room</button>
+
+</div>
+{% endblock content %}
