@@ -27,5 +27,4 @@ def allot(request):
     print(hostel)
     context = {}
     context["hostel"] = hostel
-
     return render(request, 'hostel_allotment/allot.html', context=context)

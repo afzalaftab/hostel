@@ -1,0 +1,18 @@
+{% extends "hostel_allotment/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    
+    <h2>Log In</h2>
+<form method="post" action="../profile/">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Username</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" name="username">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Password</label>
+    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary mb-3">Login</button>
+</form>
+{% endblock content %}
