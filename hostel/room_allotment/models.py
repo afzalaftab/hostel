@@ -35,7 +35,7 @@ class Student(AbstractUser):
     class Meta:
         db_table = "student"
 class hostel(models.Model):
-    hostel_id=models.CharField(max_length=20)
+    hostel_id=models.CharField(max_length=20,primary_key=True)
     hostel_name=models.CharField(max_length=100)
     hostel_capacity=models.IntegerField()
     def _str_(self):
