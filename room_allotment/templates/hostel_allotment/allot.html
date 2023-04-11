@@ -2,12 +2,14 @@
 {% block content %}
 <div><b>Hostels Available </b></div>
 <div class="book-room">
-    <select class="form-select" aria-label="Default select example">
-        {% for i in hostel %}
-        <option value=`{i.0}`>{{i.1}}</option>
-        {% endfor %}
-    </select>
-    <button type="submit" class="btn btn-primary mb-3">Get a Room</button>
+    <form method="post" action=".">
+        {% csrf_token %}
+        <h3>Hostel Name</h3>
+        <input type="text" name="hostel">
+        <input type="submit" value="book room">
+
+    </form>
+    
 
 </div>
 {% endblock content %}
