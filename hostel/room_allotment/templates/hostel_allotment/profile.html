@@ -18,6 +18,7 @@
             <div><b>Phone No. : </b>{{ student.student_phone }}</div>
             {% if student.roomNO == null %}
             <div><b>Room Not Alloted yet </b></div>
+            <div> <a href="{% url 'allot' %}"> Allot a room</a></div>
             {% else %}
             <div><b>Room No. : </b>{{ student.roomNO }}</div>
             {% endif %}
@@ -44,8 +45,3 @@
   </form>
 </div>
 {% endblock content %}
-
-<!-- 
-
-  
- -->
