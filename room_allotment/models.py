@@ -21,7 +21,7 @@ class Student(AbstractUser):
     password = models.CharField(max_length=100,unique=True)
     # email = models.EmailField(unique=True)
     dateOfBirth = models.DateField(blank=True,null=True)
-    name = models.CharField(max_length=100)
+    # name = models.CharField(max_length=100)
     hostelID=models.CharField(max_length=100,null=True)
     roomNO=models.IntegerField(null=True)
     student_phone=models.CharField(max_length=10);

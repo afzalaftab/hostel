@@ -9,7 +9,7 @@ def profile(request):
     if request.method == "POST":
         stud_id = request.POST.get("username")
         password = request.POST.get("password")
-        student = Student.objects.raw(f"select * from student where student_id={stud_id} and password='{password}'")[0]
+        student = Student.objects.raw(f"select * from student where studentID={stud_id} and password='{password}'")[0]
         login(request, student)
     context = {"student":request.user}
     return render(request,'hostel_allotment/profile.html',context=context)

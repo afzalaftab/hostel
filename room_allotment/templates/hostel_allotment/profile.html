@@ -4,14 +4,14 @@
     <div class="content-section">
       <div class="media">
         <div class="media-body">
-          <h2 class="account-heading">Welcome {{ student.name }}!</h2>
-          <h2 class="account-heading">Id-{{ student.student_id }}</h2>
-          <h2 class="account-heading">Date of Birth- {{ student.date_of_birth }}</h2>
+          <h2 class="account-heading">Welcome {{ student.first_name }}!</h2>
+          <h2 class="account-heading">Id-{{ student.studentID}}</h2>
+          <h2 class="account-heading">Date of Birth- {{ student.dateOfBirth }}</h2>
           <h2 class="account-heading">Phone Number-{{ student.student_phone }}</h2>
           {% if student.room_number == None %}
                 <h1>allot room</h1>
           {% else %}
-              <h2 class="account-heading">{{ student.room_number }}</h2>
+              <h2 class="account-heading">{{ student.roomNo }}</h2>
           {% endif %}
           <!-- what about room number and student hostel -->
           <!-- <p class="text-secondary">{{ user.email }}</p> -->

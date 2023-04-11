@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mydb',
         'USER': 'root',
-        'PASSWORD': 'password',
+        'PASSWORD': 'Ram#123456',
         'HOST':'localhost',
         'PORT':'3306',
     }
@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 LOGIN_REDIRECT_URL = 'hostel-home'
 LOGIN_URL = 'login'
 ACCOUNT_AUTHENTICATION_METHOD = 'student_id'
