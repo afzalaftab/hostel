@@ -13,3 +13,11 @@ def profile(request):
         login(request, student)
     context = {"student":request.user}
     return render(request,'hostel_allotment/profile.html',context=context)
+def allot(request):
+    cursor = connection.cursor()
+    cursor.execute("select * from room")
+    rooms = cursor.fetchall()
+    print(rooms)
+    context = {}
+    context["rooms"] = rooms
+    return render(request, 'hostel_allotment/allot.html', context=context)
